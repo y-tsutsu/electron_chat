@@ -1,4 +1,4 @@
-import { app } from "electron"
+import { app } from "electron";
 import createWindow from "./createWindow";
 
 app.on("ready", () => {
@@ -6,7 +6,7 @@ app.on("ready", () => {
 });
 
 app.on("window-all-closed", () => {
-    if (process.platform !== "drawin") {
+    if (process.platform !== "darwin") {
         app.quit();
     }
 });
